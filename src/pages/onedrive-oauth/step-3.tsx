@@ -221,6 +221,14 @@ export async function getServerSideProps({ query }) {
       },
     }
   }
+  if (data.userPrincipalName !== siteConfig.userPrincipalName) {
+    return {
+      props: {
+        error: "Do not pretend to be the owner!",
+        description: "Authenticated user: " + data.userPrincipalName + "\n" + "UserPrincipalName in your config should match the authenticated user here!"
+      },
+    }
+  }
 
   return {
     props: {
