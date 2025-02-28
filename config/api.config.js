@@ -20,7 +20,7 @@ module.exports = {
   // These are the URLs of the OneDrive API endpoints. You would not need to change anything here if you are using OneDrive International
   // or E5 Subscription OneDrive for Business. You may need to change these if you are using OneDrive 世纪互联.
   authApi: 'https://login.microsoftonline.com/common/oauth2/v2.0/token',
-  driveApi: 'https://graph.microsoft.com/v1.0/sites/58d46219-676e-4bfb-85e2-5c22e79fe9ad/drive',
+  driveApi: 'https://graph.microsoft.com/v1.0/sites/vaston.sharepoint.com,c93078d5-d587-41ac-885a-5b67ee2056ff,58d46219-676e-4bfb-85e2-5c22e79fe9ad/drive',
 
   // The scope we require are listed here, in most cases you would not need to change this as well.
   scope: 'user.read files.read.all offline_access',
